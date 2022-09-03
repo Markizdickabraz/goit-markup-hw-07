@@ -1,0 +1,143 @@
+$colors: (
+    'text-color': #757575,
+    'white-color': #fff,
+    'title-color': #212121,
+    'accent-color': #2196f3,
+    'footer-bgc-color': #2f303a,
+    'hero-button-hover': #188ce8,
+    'light-grey-color': #f5f4fa,
+    'header-logo-color': #000,
+    'footer-link-color': #ffffff99,
+    'portfolio-border-color': #eeeeee,
+    'header-border-color': #ececec,
+    'icon-color': #afb1b8,
+    'color-working-bgc': rgba(47, 48, 58, 0.8),
+    'color-bg-overlay': rgba(33, 150, 243, 0.9),
+    'color-backdrop-modal': rgba(0, 0, 0, 0.2),
+    'border-modal-icon': rgba(0, 0, 0, 0.1),
+);
+$cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+@mixin roboto-regular {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+@mixin roboto-bold {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+@mixin roboto-medium {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+@mixin raleway-bold {
+    font-family: 'Raleway', 'sens-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+@mixin roboto-black {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+}
+
+@mixin button {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+@mixin title {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+}
+
+@mixin text {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+@mixin caption {
+    font-family: 'Roboto', 'sens-serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+@mixin input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+}
+
+@mixin form__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+}
+
+@mixin label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}
+
+@mixin textarea {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+}

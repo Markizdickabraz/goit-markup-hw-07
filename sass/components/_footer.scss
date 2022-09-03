@@ -1,0 +1,124 @@
+@import '../utils/variables';
+
+.footer {
+    background-color: getColor('footer-bgc-color');
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__position {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer__logo {
+    display: inline-block;
+    color: getColor('white-color');
+    margin-bottom: 20px;
+    margin-right: 0;
+    padding: 0;
+}
+
+.adress__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.adress__link {
+    text-decoration: none;
+    color: getColor('footer-link-color');
+    transition: color 250ms $cubic-bezier;
+    @include roboto-regular;
+
+    &:hover,
+    &:focus {
+        color: getColor('accent-color');
+    }
+}
+
+.address__link--white {
+    color: getColor('white-color');
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-right: 93px;
+}
+
+.footer__strong {
+    display: inline-block;
+    margin-bottom: 20px;
+    @include roboto-bold;
+    color: getColor('white-color');
+    text-transform: uppercase;
+}
+
+.footer-icon__list {
+    list-style: none;
+    display: flex;
+    // flex-direction: row;
+    gap: 10px;
+}
+
+.footer-icon__link {
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: getColor('white-color');
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        background-color: getColor('accent-color');
+    }
+}
+
+.footer-form {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+}
+
+.footer-form__input {
+    // display: block;
+    width: 358px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: getColor('footer-bgc-color');
+    @include input;
+    border: 1px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    outline: none;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.footer-form__btn {
+    display: block;
+    color: getColor('white-color');
+    background-color: getColor('accent-color');
+    fill: getColor('white-color');
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border: none;
+    border-radius: 4px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    @include button;
+}
