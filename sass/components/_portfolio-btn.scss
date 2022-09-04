@@ -1,0 +1,45 @@
+@import '../utils/variables';
+
+.main__portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.btn__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
+
+.button {
+    cursor: pointer;
+    color: getColor('title-color');
+    background-color: getColor('light-grey-color');
+    border: 0px;
+    @include portfolio-btn;
+    padding-left: 22px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    border-radius: 4px;
+    transition: color 250ms $cubic-bezier, background-color 250ms $cubic-bezier, box-shadow 250ms $cubic-bezier;
+
+    &:hover,
+    &:focus {
+        color: getColor('white-color');
+        background-color: getColor('accent-color');
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        overflow: visible;
+        transform: translateY(0);
+    }
+}
+
+.button--accent {
+    color: getColor('white-color');
+    background-color: getColor('accent-color');
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+}
