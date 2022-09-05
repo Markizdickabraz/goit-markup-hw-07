@@ -27,14 +27,6 @@
     justify-content: center;
 }
 
-.title {
-    @include title;
-    margin-bottom: 10px;
-    color: getColor('title-color');
+.advantage__title {
     text-transform: uppercase;
-}
-
-.text {
-    @include text;
-    color: getColor('text-color');
 }

@@ -20,19 +20,24 @@
 .working__position {
     position: relative;
     display: block;
+
 }
 
 .working__title {
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // display: block;
     width: 100%;
     left: 0;
     bottom: 0;
-    text-align: center;
+    // text-align: center;
     text-transform: uppercase;
     background-color: getColor('color-working-bgc');
-    padding-top: 27px;
-    padding-bottom: 27px;
+    height: 70px;
+    // padding-top: 27px;
+    // padding-bottom: 27px;
     margin-bottom: 0;
     color: getColor('white-color');
 }

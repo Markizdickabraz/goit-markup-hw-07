@@ -4,7 +4,7 @@
 .form {
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    // padding: 40px;
 }
 
 .form__title {
@@ -15,11 +15,12 @@
     margin-bottom: 12px;
 }
 
-.form__position {
+.form__list {
     display: flex;
     flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 .form__label {

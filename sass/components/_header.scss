@@ -2,13 +2,19 @@
 
 .header {
     border-bottom: 1px solid getColor('header-border-color');
+
+}
+
+.header__content {
     display: flex;
+    // flex-direction: row;
     align-items: center;
 }
 
 // .container {
-//     @include width(1200px);
-//     }
+//     display: flex;
+// }
+
 .logo {
     color: getColor('header-logo-color');
     text-decoration: none;

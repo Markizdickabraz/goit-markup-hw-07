@@ -39,8 +39,32 @@ ul {
   overflow: hidden;
 }
 
+.title {
+  font-family: "Roboto", "sens-serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.text {
+  margin-top: 10px;
+  font-family: "Roboto", "sens-serif";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header__content {
   display: flex;
   align-items: center;
 }
@@ -236,26 +260,8 @@ ul {
   justify-content: center;
 }
 
-.title {
-  font-family: "Roboto", "sens-serif";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  color: #212121;
+.advantage__title {
   text-transform: uppercase;
-}
-
-.text {
-  font-family: "Roboto", "sens-serif";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
 }
 
 .working {
@@ -288,15 +294,15 @@ ul {
 
 .working__title {
   position: absolute;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   left: 0;
   bottom: 0;
-  text-align: center;
   text-transform: uppercase;
   background-color: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
   margin-bottom: 0;
   color: #fff;
 }
@@ -320,6 +326,10 @@ ul {
   list-style: none;
   display: flex;
   gap: 30px;
+}
+
+.team__text {
+  font-size: 16px;
 }
 
 .team__card {
@@ -434,7 +444,10 @@ ul {
   display: flex;
   flex-direction: column;
   margin-left: 70px;
-  margin-right: 93px;
+}
+
+.footer-form__position {
+  margin-left: auto;
 }
 
 .footer__strong {
@@ -547,6 +560,7 @@ ul {
   background-color: #fff;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 40px;
 }
 
 .modal__button {
@@ -573,7 +587,6 @@ ul {
 .form {
   display: flex;
   flex-direction: column;
-  padding: 40px;
 }
 
 .form__title {
@@ -589,11 +602,12 @@ ul {
   margin-bottom: 12px;
 }
 
-.form__position {
+.form__list {
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
+  list-style: none;
 }
 
 .form__label {
