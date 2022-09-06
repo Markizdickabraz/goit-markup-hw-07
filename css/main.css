@@ -266,7 +266,6 @@ ul {
 
 .working {
   padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .caption {
@@ -649,6 +648,7 @@ ul {
 }
 
 .form__textarea {
+  height: 120px;
   resize: none;
   padding-left: 16px;
   padding-top: 12px;
